@@ -1,0 +1,96 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Card & Section Hover Effects */
+.section-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Hover Cards */
+.hover-card {
+  transition: all 0.3s ease;
+}
+.hover-card:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Social Links */
+.social-link {
+  color: #333;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.social-link:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e2e2e2;
+}
+
+body.dark-mode .card,
+body.dark-mode .section-card {
+  background-color: #1e1e1e;
+  color: #e2e2e2;
+  border: 1px solid #2a2a2a;
+}
+
+body.dark-mode .badge {
+  background-color: #2a2a2a;
+  color: #e2e2e2;
+}
+
+body.dark-mode .hover-card:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+body.dark-mode .social-link {
+  color: #ddd;
+}
+body.dark-mode .social-link:hover {
+  color: #0d6efd;
+}
+
+footer {
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+/* Header Style */
+.header {
+  background-color: #ffffff;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.dark-mode .header {
+  background-color: #1e1e1e;
+  color: #e2e2e2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .text-muted,
+.dark-mode .text-secondary {
+  color: #bdbdbd !important;
+}
+
+.dark-mode .header h3 {
+  color: #ffffff !important;
+}
